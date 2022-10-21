@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import { useState,useMemo} from 'react';
 import './App.css';
 
 function App() {
+  const [count, setCount]=useState(0);
+  const [data,setData]= useState(10);
+  const mutliCountMemo =useMemo(function multiCount()
+  {
+    console.log("multiCountMemo")
+    return count*3
+  },[count])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>UseMemo Hook in React </h1>
+      <h2>Count: {count}</h2> <br />
+      <h2>Data: {data}</h2>
+      <h2>Mutli Count: {mutliCountMemo}</h2>
+      <button onClick={()=>setCount(count+1)}> Count Update</button>
+      <button onClick={()=>setData(data*3)}> Data Update</button>
     </div>
   );
 }
