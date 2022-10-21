@@ -12,6 +12,28 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.App{
+  color: rgb(132, 196, 218);
+  background-color: rgb(66, 64, 64);
+  margin: 10px;
+  padding: 15px;
+}
+.count{
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(36, 36, 141);
+  border-radius: 3px;
+}
+.data{
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(36, 36, 141);
+  border-radius: 3px;
+}
 
 .App-header {
   background-color: #282c34;

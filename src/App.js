@@ -16,8 +16,8 @@ function App() {
       <h2>Count: {count}</h2> <br />
       <h2>Data: {data}</h2>
       <h2>Mutli Count: {mutliCountMemo}</h2>
-      <button onClick={()=>setCount(count+1)}> Count Update</button>
-      <button onClick={()=>setData(data*3)}> Data Update</button>
+      <button onClick={()=>setCount(count+1)} className="count"> Count Update</button>
+      <button onClick={()=>setData(data*3)} className="data"> Data Update</button>
     </div>
   );
 }
